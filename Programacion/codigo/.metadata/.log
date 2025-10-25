@@ -269,6 +269,7 @@ java.io.FileNotFoundException: C:\Users\jgomr\.eclipse\org.eclipse.oomph.setup\s
 	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:1037)
 	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:279)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+<<<<<<< Updated upstream
 !SESSION 2025-10-25 18:22:01.510 -----------------------------------------------
 eclipse.buildId=4.37.0.20250905-1455
 java.version=21.0.8
@@ -644,3 +645,29 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:196)
 	... 68 more
+=======
+
+!ENTRY org.eclipse.oomph.setup.core 4 0 2025-10-25 18:50:39.429
+!MESSAGE C:\Users\jgomr\.eclipse\org.eclipse.oomph.setup\setups\locations.setup (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\jgomr\.eclipse\org.eclipse.oomph.setup\setups\locations.setup (Acceso denegado)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl$1.<init>(FileURIHandlerImpl.java:65)
+	at org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl.createOutputStream(FileURIHandlerImpl.java:65)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createOutputStream(ExtensibleURIConverterImpl.java:347)
+	at org.eclipse.oomph.setup.internal.core.util.UserURIHandlerImpl.createOutputStream(UserURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createOutputStream(ExtensibleURIConverterImpl.java:347)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.saveOnlyIfChangedWithMemoryBuffer(ResourceImpl.java:1279)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1030)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:497)
+	at org.eclipse.oomph.setup.internal.core.SetupContext$1.run(SetupContext.java:398)
+	at org.eclipse.oomph.base.util.BaseUtil.execute(BaseUtil.java:285)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:393)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:270)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:1037)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:279)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+>>>>>>> Stashed changes
