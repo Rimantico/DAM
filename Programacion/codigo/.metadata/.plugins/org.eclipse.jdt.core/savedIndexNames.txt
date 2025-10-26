@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+/home/juan/Escritorio/DAM/Programacion/codigo/.metadata/.plugins/org.eclipse.jdt.core
-1865797976.index
-3014394987.index
