@@ -11,31 +11,31 @@ public class MayorMenorMediaApp {
 		
 		
 		System.out.println("MAYOR, MENOR Y MEDIA (A PRUEBA DE USUARIOS MALICIOSOS)");
-		System.out.print("¿Cuántos números deseas introducir?: ");
-		do {
-			numIntroducir = comprobacion();
-		}while (comprobacion() == 1);
+		
+		numIntroducir = comprobacion(sc);
+		
+		System.out.println("Vas a introducir " + numIntroducir + " numeros");
 		
 		
 		sc.close();
 	}
 	
-	public static int comprobacion() {
-		Scanner sc = new Scanner(System.in);
-		int valor;
-		int fin;
+	public static int comprobacion(Scanner sc) {
+		int valor = 0;
+		boolean valido = false;
 		do {
+			System.out.print("¿Cuántos números deseas introducir?: ");
 			try {
 				valor = Integer.parseInt(sc.nextLine());
-				fin = 1;
+				valido = true;
 			}catch(NumberFormatException e) {
 				System.out.println("El valor introducido no es un número entero correcto. Inténtelo de nuevo");
-				fin = 0;
+				valido = false;
 			}
-		}while (fin !=1);
+		}while (!valido);
 		
 		
-		return fin;
+		return valor;
 	}
 	
 }
