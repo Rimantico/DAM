@@ -11,17 +11,18 @@ public class MayorMenorMediaApp {
 		
 		int numIntroducir;
 		double num = 0 ;
-		double mayor = num;
-		double menor = num;
+		double mayor = Double.NEGATIVE_INFINITY;
+		double menor = Double.POSITIVE_INFINITY;
 		double suma= num;
 		int contador = 0;
 		double media;
 		
 		numIntroducir = introducirNumeros(sc);
 		
+		
+		
 		for(int i = 1 ; i <= numIntroducir ; i++) {
-			System.out.print("Introduzca el numero " + i + ": ");
-			num = Double.parseDouble(sc.nextLine());
+			num = numeros(sc, i);
 			suma+= num;
 			contador++;
 			
@@ -59,10 +60,24 @@ public class MayorMenorMediaApp {
 		
 		return valor;
 	}
-	public static int numeros() {
+	public static double numeros(Scanner sc, int i) {
+		double num = 0;
+		boolean comprobacion = false;
+		do {
+			System.out.println("Introduzca el numero " + i + ": ");
+			try {
+				num = Double.parseDouble(sc.nextLine());
+				comprobacion = true;
+			}catch(NumberFormatException e) {
+				System.out.println("Dato erroneo, Introduzca de nuevo un valor");
+				comprobacion = false;
+			}
+		
+			
+		}while(!comprobacion);
 		
 		
-		return;
+		return num;
 	}
 	
 
