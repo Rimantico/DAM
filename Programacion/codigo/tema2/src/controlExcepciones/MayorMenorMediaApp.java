@@ -7,35 +7,63 @@ public class MayorMenorMediaApp {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("MAYOR, MENOR Y MEDIA (A PRUEBA DE USUARIOS MALICIOSO)");
+		
 		int numIntroducir;
+		double num = 0 ;
+		double mayor = num;
+		double menor = num;
+		double suma= num;
+		int contador = 0;
+		double media;
 		
+		numIntroducir = introducirNumeros(sc);
 		
-		System.out.println("MAYOR, MENOR Y MEDIA (A PRUEBA DE USUARIOS MALICIOSOS)");
+		for(int i = 1 ; i <= numIntroducir ; i++) {
+			System.out.print("Introduzca el numero " + i + ": ");
+			num = Double.parseDouble(sc.nextLine());
+			suma+= num;
+			contador++;
+			
+			if(num > mayor) {
+				mayor =num;
+			}
+			if(num < menor) {
+				menor = num;
+			}
+		}
 		
-		numIntroducir = comprobacion(sc);
+		media = suma/contador;
 		
-		System.out.println("Vas a introducir " + numIntroducir + " numeros");
+		System.out.println("El mayor de los números introducidos ha sido " + mayor);
+		System.out.println("El menor de los números introducidos ha sido " + menor);
+		System.out.println("La media de todos los números vale: " + media);
 		
 		
 		sc.close();
 	}
-	
-	public static int comprobacion(Scanner sc) {
+
+	public static int introducirNumeros(Scanner sc) {
+		boolean comprobacion = false;
 		int valor = 0;
-		boolean valido = false;
 		do {
-			System.out.print("¿Cuántos números deseas introducir?: ");
+			System.out.print("¿Cuantos numeros desea introducir?: ");
+			
 			try {
 				valor = Integer.parseInt(sc.nextLine());
-				valido = true;
-			}catch(NumberFormatException e) {
-				System.out.println("El valor introducido no es un número entero correcto. Inténtelo de nuevo");
-				valido = false;
+				comprobacion = true;
+			}catch(NumberFormatException e){
+				System.out.println("Dato erroneo.Introduzca otro valor");
 			}
-		}while (!valido);
-		
+		}while(!comprobacion);
 		
 		return valor;
 	}
+	public static int numeros() {
+		
+		
+		return;
+	}
 	
+
 }
