@@ -59,7 +59,11 @@ public class MayorMenorMediaApp {
 		
 		return valor;
 	}
-	
+	public static int numeros() {
+		
+		
+		return;
+	}
 	
 
 }
