@@ -19,9 +19,6 @@ public class DetectorPrimosApp {
 			if(numPrimo % i == 0) {
 				contadorDiv++;
 			}
-			
-			
-			
 		}
 		if(contadorDiv <= 2) {
 			System.out.println("El número " + numPrimo + " Si es primo");
