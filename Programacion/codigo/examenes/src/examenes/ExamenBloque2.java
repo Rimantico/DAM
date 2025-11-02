@@ -77,6 +77,7 @@ public class ExamenBloque2 {
 				break;
 			default:
 				System.out.println("Has introducido un valor erroneo. Por favor vuelva a iontroducir un valor entre 0 y 4.");
+				break;
 			}
 		}while( opcion != 0);	
 		

@@ -17,7 +17,7 @@ public class ExamenEjemploTema2 {
 		
 		do {
 			System.out.print("Introduzca un numero entero: ");
-			numero = Integer.parseInt(sc.nextLine());
+			numero = comprobar(sc);
 			if(numero == 0) {
 				System.out.println("Has introducido 0. Cerrando programa");
 				break;
@@ -44,8 +44,22 @@ public class ExamenEjemploTema2 {
 		
 		sc.close();
 	}
-
 	
-	
+	public static int comprobar(Scanner sc) {
+		int numero = 1;
+		boolean comprobar = false;
+		do {
+			try {
+				numero = Integer.parseInt(sc.nextLine());
+				comprobar = true;
+			}catch(NumberFormatException e){
+				System.out.println("Ha introducido un dato invalido. vuelva a introducir otro");
+				System.out.print("Introduzca un numero entero: ");
+				comprobar = false;
+			}
+		}while(comprobar == false);
+		
+		return numero;
+	}
 	
 }
