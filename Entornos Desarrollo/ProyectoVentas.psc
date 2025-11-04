@@ -29,9 +29,16 @@ Proceso  ProyectoVentas
 				Escribir " Introduce el precio del producto " numeroProductos[i]
 				Leer precioprodcutos[i]
 			FinPara
-			dimension productos[numeroProductos[], precioprodcutos[]]
+			dimension productos(numeroProductos[], precioprodcutos[])
 		2:
+			dimension totalvendido(numeroProductos)
 			Escribir "Ventas diarias de cada producto"
+			para i<-1 Hasta numeroProductos Con Paso 1
+				Escribir "Cuanto ha vendido " numeroProdutos[i]
+				Leer totalvendido[i]
+				
+				totalvendido[i] * totalvendido[i]
+			FinPara
 			
 		3:
 			
