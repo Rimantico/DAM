@@ -9,12 +9,19 @@ public class Ejercicio3 {
 		
 		double[] notas = new double[5];
 		
-		double mayor = notas[0];
-		double menor = notas[0];
+		double mayor = Double.NEGATIVE_INFINITY;
+		double menor = Double.POSITIVE_INFINITY;
+		double media = 0;
+		double contador = 0;
 		
 		for (int i = 0 ; i<notas.length ; i++ ) {
-			System.out.println("Introduzca la nota del " + (i +1) + "º alumno: ");
-			notas[i] = Double.parseDouble(sc.nextLine());
+			do {
+				System.out.print("Introduzca la nota del " + (i +1) + "º alumno: ");
+				notas[i] = Double.parseDouble(sc.nextLine());
+				if(notas[i] < 0 || notas[i] > 10)
+					System.out.println("Introduzca una nota entre 0 y 10");
+			}while(notas[i] < 0 || notas[i] > 10);
+			
 		}
 		
 		
@@ -25,9 +32,17 @@ public class Ejercicio3 {
 			if (menor > notas[i])
 				menor = notas[i];
 			
+			media += notas[i];
+			contador++;
 			System.out.println("La nota del " +(i+1) + "º es: " + notas[i]);
 		
 		}
+		
+		media = media / contador;
+		
+		System.out.println("La mayor nota es: " + mayor);
+		System.out.println("La menor nota es: " + menor);
+		System.out.println("La media de todos los numeros es " + media);
 		sc.close();
 	}
 
