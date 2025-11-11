@@ -14,7 +14,7 @@ select AVG(Population) from country;
 select name , LifeExpectancy from country where LifeExpectancy IS NOT NULL order by LifeExpectancy ASC ;
 select name , LifeExpectancy from country where LifeExpectancy IS NOT NULL  order by LifeExpectancy DESC;
 -- 7. Saca una lista de continentes ordenadas por la esperanza de vida media de forma descendente.
- -- Me sale error select  Continent, LifeExpectancy from country where LifeExpectancy Is NOT NULL group by Continent order by LifeExpectancy DESC;
+ select  Continent, LifeExpectancy from country where LifeExpectancy Is NOT NULL group by Continent order by LifeExpectancy DESC;
 -- 8. Cuál es la mayor esperanza de vida (Dos formas de hacerlo, con una variable y de una forma nueva, usar una select como tabla)
 select name , LifeExpectancy from country where LifeExpectancy=(select MAX(LifeExpectancy) from country);
 -- 9. Sacar el país con mayor extensión de terreno
