@@ -48,7 +48,7 @@ Proceso ProyectoVentas
                 FinSi
                 
             3:
-				Escribir "Has elegio mostrar tabla completa de ventas"
+                Escribir "Has elegido mostrar tabla completa de ventas"
                 Para i <- 1 Hasta Dias Con Paso 1
                     Escribir ""
                     Escribir "Día ", i
@@ -58,20 +58,13 @@ Proceso ProyectoVentas
                 FinPara
                 
             4:
-				Escribir "Has elegido calcular total por producto"
-                Dimension totalproductos[producto]
+                Escribir "Has elegido calcular total por producto"
                 Para j <- 1 Hasta producto Con Paso 1
-                    totalproductos[j] <- 0
-                    Para i <- 1 Hasta Dias Con Paso 1
-                        totalproductos[j] <- totalproductos[j] + ventasdiarias[j, i] * precio[j]
-                    FinPara
-                FinPara
-                Para j <- 1 Hasta producto Con Paso 1
-                    Escribir productos[j], ": ", totalproductos[j]
+                    Escribir productos[j], ": ", CalcularTotalProducto(j, Dias, ventasdiarias, precio)
                 FinPara
                 
             5:
-				Escribir "Has elegido calcular total por día"
+                Escribir "Has elegido calcular total por día"
                 Para i <- 1 Hasta Dias Con Paso 1
                     totalDia <- 0
                     Escribir "Día ", i, ":"
@@ -84,7 +77,7 @@ Proceso ProyectoVentas
                 FinPara
                 
             6:
-				Escribir "Has elegido Mostrar Producto más y menos vendido"
+                Escribir "Has elegido Mostrar Producto más y menos vendido"
                 Dimension totalUnidades[producto]
                 Para j <- 1 Hasta producto Con Paso 1
                     totalUnidades[j] <- 0
@@ -134,3 +127,13 @@ Proceso ProyectoVentas
         FinSegun
     Hasta Que opciones = 8
 FinProceso
+
+
+Funcion total <- CalcularTotalProducto(j, Dias, ventasdiarias, precio)
+    Definir i Como Entero
+    Definir total Como Real
+    total <- 0
+    Para i <- 1 Hasta Dias Con Paso 1
+        total <- total + ventasdiarias[j, i] * precio[j]
+    FinPara
+FinFuncion
