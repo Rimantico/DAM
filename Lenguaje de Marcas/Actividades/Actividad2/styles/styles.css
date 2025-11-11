@@ -1,0 +1,74 @@
+/* Esta parte del codigo afecta a toda la página web */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado, main y footer */
+
+header{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    height: 15vh;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#izquierda{
+    display: flex;
+    flex-direction: column; /* Esto hace que se ponga en columna el flex  y en vez de que vaya en linea se haga columna*/
+    width: 25vw;
+    background-color: lightgray;
+    height: 75vh;
+    
+}
+
+/* Esta parte afecta a los articulos que se encuentran dentro de la sección */
+
+#izquierda>article{
+    background-color: red;
+    height: calc(75vh/2);
+
+}
+
+#centro{
+    width: 50vw;
+    height: 75vh;
+    background-color: white;
+    height: 70vh;
+    
+}
+
+#derecha{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: lightgray;
+    height: 75vh;
+    
+}
+
+/* Esta parte afecta a los articulos que se encuentran dentro de la sección */
+
+#derecha>article{
+    background-color: yellow;
+    height: calc(75vh / 4);
+    border: 2px solid black;
+}
+
+footer{
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

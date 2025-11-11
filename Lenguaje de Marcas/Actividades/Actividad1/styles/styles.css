@@ -58,4 +58,5 @@ footer{
     background-color: lightgray;
     height: 5vh;
     border: 2px solid black;
+    display: flex;
 }
