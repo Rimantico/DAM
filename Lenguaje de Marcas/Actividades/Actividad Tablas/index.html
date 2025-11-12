@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link a la hoja de estilos-->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Horario de Clase</title>
+    <!-- Fuentes Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+SAS:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <!-- Columnas del horario-->
+        <tr>
+            <th class="hora">Hora</th>
+            <th class="dias">Lunes</th>
+            <th class="dias">Martes</th>
+            <th class="dias">Miércoles</th>
+            <th class="dias">Jueves</th>
+            <th class="dias">Viernes</th>  
+        </tr>
+        </thead>
+        <tbody>
+            <!-- Filas del horario -->
+            <tr>
+                <td class="hora">8:15 - 9:15</td>
+                <td class="sistemasinf" rowspan="2">Sistemas Informáticos</td>
+                <td class="basesdatos" rowspan="2">Bases de Datos</td>
+                <td class="sistemasinf" rowspan="2">Sistemas Informáticos</td>
+                <td class="digitalizacion">Digitalización</td>
+                <td class="entornos" rowspan="2">Entornos de Desarrollo</td>
+            </tr>
+            <tr>
+                <td class="hora">9:15-10:15</td>
+                <td class="programacion">Programación</td>
+                
+            </tr>
+            <tr>
+                <td class="hora">10:15-11:15</td>
+                <td class="itinerario">Itinerario Personal para la Empleabilidad</td>
+                <td class="entornos">Entornos de Desarrollo</td>
+                <td class="programacion">Programación</td>
+                <td class="basesdatos">Bases de Datos</td>
+                <td class="sostenibilidad">Sostenibilidad</td>
+            </tr>
+            <tr>
+                <td class="hora">11:15-11:45</td>
+                <td class="recreo" colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td class="hora">11:45-12:45</td>
+                <td class="programacion" rowspan="3">Programación</td>
+                <td class="programacion" rowspan="2">Programación</td>
+                <td class="programacion">Programación</td>
+                <td class="basesdatos">Bases de Datos</td>
+                <td class="sistemasinf">Sistemas Informáticos</td>
+            </tr>
+            <tr>
+                <td class="hora">12:45-13:45</td>
+                <td class="basesdatos" rowspan="2">Bases de Datos</td>
+                <td class="lenguajesmarc" rowspan="2">Lenguaje de Marcas y Sistemas de Gestión de Información</td>
+                <td class="itinerario" rowspan="2">Itinerario Personal para la Empleabilidad</td>
+            </tr>
+            <tr>
+                <td class="hora">13:45-14:45</td>
+                <td class="lenguajesmarc">Lenguaje de Marcas y Sistemas de Gestión de Información</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Se puede poner en un footer-->
+    <p class="hechopor">Hecho por: Juan Gómez Ruiz 1ºDAM</p>
+</body>
+</html>

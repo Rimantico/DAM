@@ -1,0 +1,119 @@
+/* Cuerpo principal de la pagina web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 20px;
+}
+/* Estilo de la tabla del horario */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 3px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+/* Clase específica para el recreo */
+.recreo{
+    text-align: center;
+    font-family: "Playwrite DE SAS", cursive;
+    letter-spacing: 30px;
+    font-size: 30px;
+    color: turquoise;
+    background-color: rgb(192, 111, 111);
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-style: italic; /* Se utiliza para poner en cursiva */
+    text-shadow: 2px 2px 5px black;
+
+}
+/* Clase específica para las horas */
+.hora{
+    background-color: lightblue;
+    font-family: "Bitcount", system-ui;
+    font-weight: bold;
+    font-size: 23px;
+}
+/* Clase específica para los dias de la semana */
+.dias{
+    background-color: lightgreen;
+    font-family: "Bitcount", system-ui;
+    font-weight: bold;
+    font-size: 23px;
+}
+/* Clase específica para la asignatura de Sistemas informáticos */
+.sistemasinf{
+    background-color: #FFF3E0;
+    font-family: "Jost", sans-serif;
+    color: #E65100;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Programación */
+.programacion{
+    background-color: #E1BEE7;
+    font-family: "Jost", sans-serif;
+    color: #4A148C;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Base de datos */
+.basesdatos{
+    background-color: #C8E6C9;
+    font-family: "Jost", sans-serif;
+    color: #1B5E20;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Entornos de Desarrollo */
+.entornos{
+    background-color: #BBDEFB;
+    color: #0D47A1;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Lenguajes de Marcas y Sistemas de Gestión de Información */
+.lenguajesmarc{
+    background-color: #FFF9C4;
+    color: #F57F17;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Itinerario Personal para la Empleabilidad */
+.itinerario{
+    background-color: #D7CCC8;
+    color: #3E2723;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Digitalización */
+.digitalizacion{
+    background-color: #F0F4C3;
+    color: #827717;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase específica para la asignatura de Sostenibilidad */
+.sostenibilidad{
+    background-color: #CFD8DC;
+    color: #263238;
+    font-family: "Jost", sans-serif;
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 20px;
+}
+/* Clase para el autor del horario  */
+.hechopor{
+    text-align: right;
+    font-family: "Dancing Script";
+    font-weight: bold; /* Se utiliza para poner en negrita */
+    font-size: 25px;
+}
