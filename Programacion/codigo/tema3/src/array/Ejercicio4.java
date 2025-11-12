@@ -18,21 +18,21 @@ public class Ejercicio4 {
 			
 			contador--;
 		}
+		//Si introduzco un numero negativo de primeras me saldrá este error
 		if (contador == 12)
 			System.out.println("Dato inicial erroneo");
+		//El resultado si se meten los 12 numeros
 		if(contador == 0) {
 			for(int i = 0 ; i< reales.length ; i++) {
 				System.out.println("el numero " + (i+1) + " es " + reales[i]);
 			}
 		}else {
-
+			//Se utiliza en caso de que no se llegue a los 12 números para que enseñe cuantos ha introducido
 			for(int i = 0 ; i< reales.length- contador ; i++) {
 				System.out.println("el numero " + (i+1) + " es " + reales[i]);
 			}
 			
 		}
-		
-		
 		sc.close();
 	}
 
