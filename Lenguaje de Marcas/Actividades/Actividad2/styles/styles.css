@@ -1,18 +1,33 @@
+
 /* Esta parte del codigo afecta a toda la página web */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Estilos del encabezado, main y footer */
 
 header{
-    background-color: lightblue;
+    display: flex;
+    background-color: #305669;
+    color: #8ABEB9;
+    align-items: center;
     text-align: center;
     padding: 20px;
     height: 15vh;
+}
+header div img{
+    height: 80px;
+    width: auto;
+    margin-right: 30vw;
+}
+header h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 main{
@@ -25,32 +40,44 @@ main{
     display: flex;
     flex-direction: column; /* Esto hace que se ponga en columna el flex  y en vez de que vaya en linea se haga columna*/
     width: 25vw;
-    background-color: lightgray;
+    background-color:#F7F9FB;
     height: 75vh;
-    
 }
 
 /* Esta parte afecta a los articulos que se encuentran dentro de la sección */
 
 #izquierda>article{
-    background-color: red;
+    background-color: #8ABEB9;
+    color: black;
     height: calc(75vh/2);
-
+    padding: 10px;
+    overflow:auto;
+    text-overflow: ellipsis;
+    text-align: justify;
 }
 
 #centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50vw;
+    background-color: #B7E5CD;
     height: 75vh;
-    background-color: white;
-    height: 70vh;
-    
+    padding: 25px;
+    text-align: justify;
 }
-
+#centro img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
 #derecha{
     display: flex;
     flex-direction: column;
     width: 25vw;
-    background-color: lightgray;
+    background-color: #F7F9FB;
     height: 75vh;
     
 }
@@ -58,13 +85,18 @@ main{
 /* Esta parte afecta a los articulos que se encuentran dentro de la sección */
 
 #derecha>article{
-    background-color: yellow;
+    background-color: #8ABEB9;
+    padding: 10px;
+    color: black;
     height: calc(75vh / 4);
-    border: 2px solid black;
+    overflow:auto;
+    text-overflow: ellipsis;
+    text-align: justify;
 }
 
 footer{
-    background-color: lightblue;
+    background-color: #305669;
+    color: #8ABEB9;
     text-align: center;
     padding: 10px;
     height: 10vh;
