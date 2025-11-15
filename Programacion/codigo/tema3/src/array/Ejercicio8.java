@@ -13,6 +13,7 @@ public class Ejercicio8 {
 		String [] alumnos = new String[30];
 		int[] edad = new int[30];
 		int contador = 30;
+		int mayorEdad = 0;
 		
 		
 		for(int i = 0 ; i<alumnos.length ; i++) {
@@ -32,13 +33,26 @@ public class Ejercicio8 {
 				if(edad[i] >= 18) {
 					System.out.println("El alumno " + alumnos[i] + " es mayor de edad");
 				}
+				
 			}
-		}else
+			for (int i = 0 ; i<alumnos.length ; i++) {
+				if(edad[i] > mayorEdad)
+					mayorEdad = edad[i];
+			}
+			System.out.println("El alumno con mayor edad es " + alumnos[mayorEdad]);
+		}else {
 			for(int i = 0 ; i<alumnos.length-contador ; i++) {
 				if(edad[i] >= 18) {
 					System.out.println("El alumno " + alumnos[i] + " es mayor de edad");
 				}
 			}
+			for (int i = 0 ; i<alumnos.length-contador ; i++) {
+				if(edad[i] > mayorEdad)
+					mayorEdad = edad[i];
+			}
+		}
+			
+			
 		
 		
 		sc.close();
