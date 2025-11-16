@@ -7,9 +7,10 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
+		//Inicializamos los arrays
 		String[] cadena = new String[5];
 		String[] cadena2 = new String [5];
-		
+		//Introducir los datos
 		for(int i = 0 ; i < cadena.length ; i++) {
 			System.out.print("Introduce la " + i + "º cadena de caracteres: ");
 			cadena[i] = sc.nextLine();
