@@ -1,16 +1,15 @@
-
 /* Esta parte del codigo afecta a toda la página web */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 /* Estilos del encabezado, main y footer */
 
-header{
+header {
     display: flex;
     background-color: #305669;
     color: #8ABEB9;
@@ -19,44 +18,47 @@ header{
     padding: 20px;
     height: 15vh;
 }
-header div img{
+
+header div img {
     height: 80px;
     width: auto;
     margin-right: 30vw;
 }
-header h1{
+
+header h1 {
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
-main{
+main {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-#izquierda{
+#izquierda {
     display: flex;
-    flex-direction: column; /* Esto hace que se ponga en columna el flex  y en vez de que vaya en linea se haga columna*/
+    flex-direction: column;
+    /* Esto hace que se ponga en columna el flex  y en vez de que vaya en linea se haga columna*/
     width: 25vw;
-    background-color:#F7F9FB;
+    background-color: #F7F9FB;
     height: 75vh;
 }
 
 /* Esta parte afecta a los articulos que se encuentran dentro de la sección */
 
-#izquierda>article{
+#izquierda>article {
     background-color: #8ABEB9;
     color: black;
     height: calc(75vh/2);
     padding: 10px;
-    overflow:auto;
+    overflow: auto;
     text-overflow: ellipsis;
     text-align: justify;
 }
 
-#centro{
+#centro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,34 +69,36 @@ main{
     padding: 25px;
     text-align: justify;
 }
-#centro img{
+
+#centro img {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
 }
-#derecha{
+
+#derecha {
     display: flex;
     flex-direction: column;
     width: 25vw;
     background-color: #F7F9FB;
     height: 75vh;
-    
+
 }
 
 /* Esta parte afecta a los articulos que se encuentran dentro de la sección */
 
-#derecha>article{
+#derecha>article {
     background-color: #8ABEB9;
     padding: 10px;
     color: black;
     height: calc(75vh / 4);
-    overflow:auto;
+    overflow: auto;
     text-overflow: ellipsis;
     text-align: justify;
 }
 
-footer{
+footer {
     background-color: #305669;
     color: #8ABEB9;
     text-align: center;

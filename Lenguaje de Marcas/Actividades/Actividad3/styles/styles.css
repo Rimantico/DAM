@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+#masculino {
+    accent-color: blue;
+}
+
+#usuario {
+    border: 2px solid #007BFF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#femenino {
+    accent-color: pink;
+}
+
+#otro {
+    accent-color: purple;
+}
+
+#contrasena {
+    border: 2px solid #28A745;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#nombre {
+    border: 2px solid #28A745;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#fechaNacimiento {
+    border: 2px solid #28A745;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#apellido {
+    border: 2px solid #28A745;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#colorFavorito {
+    border: 2px solid #28A745;
+    border-radius: 5px;
+}
