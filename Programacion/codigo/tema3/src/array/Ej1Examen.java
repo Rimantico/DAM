@@ -9,8 +9,27 @@ public class Ej1Examen {
 		double[] array1 = crearArray();
 		double[] array2 = crearArray();
 		
-				
 		
+		double[] resultado = compararValores(array1, array2);
+		double mayorA = resultado[0];
+		double mayorB = resultado[1];
+		double iguales = resultado[2];
+		String mayor;
+		if(mayorA > mayorB) {
+			mayor= "MayorA";
+		}else
+			if(mayorB > mayorA) {
+				mayor= "MayorB";
+			}else
+				mayor = "Empate";
+		
+		
+		System.out.println("Resultados");
+		System.out.println("El array con más valores mayores es: " + mayor);
+        System.out.println("Casillas donde A > B: " + mayorA);
+        System.out.println("Casillas donde B > A: " + mayorB);
+        System.out.println("Casillas iguales: " + iguales);
+
 		
 	}
 	//Introducir valores en el array
@@ -27,7 +46,7 @@ public class Ej1Examen {
 	}
 	
 	//Comparar Array
-	public static double[] resultado(double[] array1 , double[] array2) {
+	public static double[] compararValores(double[] array1 , double[] array2) {
 		int mayorA = 0;
 		int mayorB = 0;
 		int iguales = 0;
