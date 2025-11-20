@@ -47,8 +47,14 @@ public class Ej2Examen {
 		System.out.println("La temperatura mínima es de " + tempMin);
 		
 		// Muestro por pantalla la media con un bucle for each
+
+		double mediaTempForEach = 0;
+		for (double temp : temperaturas) {
+			mediaTempForEach += temp;
+		}	
 		
-		double tempMedia;
+		mediaTempForEach = mediaTempForEach / 100;
+		System.out.println("La media total de las temperaturas es de " + mediaTempForEach);
 
 	}
 
