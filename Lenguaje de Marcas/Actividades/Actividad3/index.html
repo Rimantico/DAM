@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Holaaaaaa</title>
+</head>
+
+<body>
+    <h1>Formulario de una página web</h1>
+
+    <h2>Cree su cuenta</h2>
+
+    <form action="" id="crearcuenta">
+        <br>
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        <input type="submit" value="Crear cuenta">
+    </form>
+    <br>
+
+    <h2>Dime tu nombre y apellidos</h2>
+
+    <form action="" id="nombreapellidos">
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    <br>
+
+    <h2>Genero</h2>
+
+    <form action="" id="genero">
+        <br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <br>
+        <input type="radio" id="femenino" name="genero" value="femenino" required>
+        <label for="femenino">Femenino</label><br>
+        <br>
+        <input type="radio" id="otro" name="genero" value="otro" required>
+        <label for="otro">Otro</label><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+    <h2>Indica tu edad</h2>
+
+    <form action="" id="edad">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="120" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+    <h2>¿Cuando naciste?</h2>
+
+    <form action="" id="nacimiento">
+        <br>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+    <h2>¿Que te gusta hacer por las tardes?</h2>
+
+    <form action="" id="gustar">
+        <br>
+        <input type="checkbox" id="deporte" name="actividad" value="deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checkbox" id="leer" name="actividad" value="leer">
+        <label for="leer">Leer</label><br>
+        <input type="checkbox" id="musica" name="actividad" value="musica">
+        <label for="musica">Escuchar música</label><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+    <h2>¿Tienes un color favorito?</h2>
+
+    <br>
+    <form action="" id="color">
+        <label for="">
+            <input type="color" id="colorFavorito" name="colorFavorito" value="#000000">
+            <label for="colorFavorito">Elige tu color favorito</label><br><br>
+            <input type="submit" value="Enviar">
+        </label>
+    </form>
+</body>
+
+</html>
