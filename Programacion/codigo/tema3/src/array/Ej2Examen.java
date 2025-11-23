@@ -45,16 +45,55 @@ public class Ej2Examen {
 		}
 		System.out.println("La temperatura máxima es de " + tempMax);
 		System.out.println("La temperatura mínima es de " + tempMin);
-		
+
 		// Muestro por pantalla la media con un bucle for each
 
 		double mediaTempForEach = 0;
 		for (double temp : temperaturas) {
 			mediaTempForEach += temp;
-		}	
-		
+		}
+
 		mediaTempForEach = mediaTempForEach / 100;
 		System.out.println("La media total de las temperaturas es de " + mediaTempForEach);
+
+		
+		// Que dia se produjo la temperatura máxima y la temperatura mínnima
+		tempMax = Double.NEGATIVE_INFINITY;
+		tempMin = Double.POSITIVE_INFINITY;
+		int posicionMax = 0;
+		int posicionMin = 0;
+		for (int i = 0; i < temperaturas.length; i++) {
+			if (temperaturas[i] > tempMax) {
+				tempMax = temperaturas[i];
+				posicionMax = i;
+			}
+
+			if (temperaturas[i] < tempMin) {
+				tempMin = temperaturas[i];
+				posicionMin = i;
+			}
+
+		}
+		System.out.println("La temperatura máxima se produjo el día: " + posicionMax);
+		System.out.println("La temperatura mínima se produjo el día: " + posicionMin);
+		
+		
+		// Ordenacion por el método burbuja
+		for (int i = 0; i < temperaturas.length - 1; i++) {
+			for (int j = 0; j < (temperaturas.length - 1 - i); j++) {
+				if (temperaturas[j] > temperaturas[j + 1]) {
+					double aux = temperaturas[j];
+					temperaturas[j] = temperaturas[j + 1];
+					temperaturas[j + 1] = aux;
+				}
+			}
+		}
+		
+
+		// 2º temperatura mayor y menor
+		System.out.println("La 2º temperatura menor es: " + temperaturas[1]);
+		System.out.println("La 2º temperatura mayor es: " + +temperaturas[98]);
+
 
 	}
 
