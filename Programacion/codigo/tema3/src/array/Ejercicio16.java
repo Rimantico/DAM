@@ -3,6 +3,17 @@ package array;
 import java.util.Scanner;
 
 public class Ejercicio16 {
+	/**
+	 * Crea un programa que pida valores por teclado y rellene 7 valores enteros. A
+	 * continuación, se desea presentar un menú en el que se presente el siguiente
+	 * menú: Introducción de valores al array Realiza una búsqueda por el método
+	 * secuencial Realiza una búsqueda por el método de búsqueda binaria Realiza la
+	 * ordenación por el método de la burbuja Realiza la ordenación por el método de
+	 * selección Realiza la ordenación por el método de quick-sort Salir del
+	 * programa
+	 * 
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

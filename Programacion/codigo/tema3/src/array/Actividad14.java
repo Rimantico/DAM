@@ -3,6 +3,16 @@ package array;
 import java.util.Scanner;
 
 public class Actividad14 {
+	/**
+	 * Crear un programa que lea los precios de 5 artículos y las cantidades
+	 * vendidas por una empresa en sus 4 sucursales. Informar: Las cantidades
+	 * totales de cada artículo. La cantidad de artículos en la sucursal 2. La
+	 * cantidad del artículo 3 en la sucursal 1. La recaudación total de cada
+	 * sucursal. La recaudación total de la empresa. La sucursal de mayor
+	 * recaudación.
+	 * 
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

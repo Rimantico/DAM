@@ -88,7 +88,7 @@ public class Ejercicio8 {
                 }
             }
 
-            System.out.println("\nLos alumnos más mayores son:");
+            System.out.println("\nLos alumnos más mayores de edad son:");
 
             for (int j = 0; j < 3; j++) {
                 if (mayores[j] != -1) {
@@ -96,7 +96,7 @@ public class Ejercicio8 {
                 }
             }
         }
-
+        int alumnoMayor;
         sc.close();
     }
 }
