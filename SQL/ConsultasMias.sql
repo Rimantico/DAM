@@ -1,7 +1,15 @@
 -- Muestra los productos cuyo precio de compra sea mayor que el precio más alto dentro de la línea "Classic Cars".
-select productName 
-from products 
-where buyPrice>(select Max(buyPrice) from products where productLine="Classic Cars");
+SELECT 
+    productName
+FROM
+    products
+WHERE
+    buyPrice > (SELECT 
+            MAX(buyPrice)
+        FROM
+            products
+        WHERE
+            productLine = 'Classic Cars');
 -- Lista los clientes cuyo límite de crédito esté entre 50,000 y 100,000.
 select customerName, creditLimit 
 from customers 
