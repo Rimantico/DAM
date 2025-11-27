@@ -1,7 +1,7 @@
 package clases;
 
 public class Peliculas {
-	
+	// Atributos
 	private String genero;
 	private String actores;
 	private String personajePrincipal;
@@ -9,8 +9,8 @@ public class Peliculas {
 	private String trama;
 	private int anoSalida;
 
-	//Constructors
-	
+	// Constructors
+
 	public Peliculas(String genero, String actores, String personajePrincipal, String director, String trama,
 			int anoSalida) {
 		super();
@@ -21,7 +21,7 @@ public class Peliculas {
 		this.trama = trama;
 		this.anoSalida = anoSalida;
 	}
-	//Getters y Setters
+	// Getters y Setters
 
 	public String getGenero() {
 		return genero;
@@ -70,7 +70,5 @@ public class Peliculas {
 	public void setAnoSalida(int anoSalida) {
 		this.anoSalida = anoSalida;
 	}
-	
-	
 
 }

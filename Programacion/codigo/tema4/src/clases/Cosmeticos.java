@@ -1,7 +1,7 @@
 package clases;
 
 public class Cosmeticos {
-
+	// Cosmeticos
 	private String higiene;
 	private String limpiador;
 	private String pelo;

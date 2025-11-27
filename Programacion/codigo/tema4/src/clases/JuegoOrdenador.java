@@ -1,6 +1,7 @@
 package clases;
 
 public class JuegoOrdenador {
+	// Atributos
 	private String genero;
 	private String protagonista;
 	private String modelado;
@@ -22,7 +23,7 @@ public class JuegoOrdenador {
 		this.plataformaDeSalida = plataformaDeSalida;
 		this.anoSalida = anoSalida;
 	}
-	//Getters y Setters
+	// Getters y Setters
 
 	public String getGenero() {
 		return genero;
@@ -79,7 +80,10 @@ public class JuegoOrdenador {
 	public void setAnoSalida(int anoSalida) {
 		this.anoSalida = anoSalida;
 	}
-	
-	
+	@Override
+	public String toString() {
+		
+		return super.toString();
+	}
 
 }
