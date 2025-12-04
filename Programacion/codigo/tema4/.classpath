@@ -7,5 +7,12 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/ClasesPrueba1.jar"/>
+	<classpathentry kind="lib" path="lib/Actividad202.jar"/>
+	<classpathentry kind="src" path="/pruebas"/>
+	<classpathentry kind="lib" path="lib/Actividad203a.jar"/>
+	<classpathentry kind="lib" path="lib/Actividad203b.jar"/>
+	<classpathentry kind="lib" path="lib/Actividad203c.jar"/>
+	<classpathentry kind="lib" path="lib/Actividad204a.jar"/>
+	<classpathentry kind="lib" path="lib/Actividad204b.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
