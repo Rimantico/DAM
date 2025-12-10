@@ -54,9 +54,13 @@ footer {
     width: 60vh;
     height: auto;
     margin-bottom: 20px;
-    :hover {
-        transform: scale(1.05);
-        transition: transform 0.3s;
-    }
-    
+}
+.logo:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s;
+}
+.logocabecera {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
 }
