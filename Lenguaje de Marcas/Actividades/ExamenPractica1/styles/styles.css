@@ -58,6 +58,7 @@ main {
 
 .seccionizquierda {
     display: flex;
+    flex-direction: column;
     background-color: lightgray;
     height: 75vh;
     width: 75vw;
@@ -68,6 +69,20 @@ main {
     background-color: lightblue;
     height: 75vh;
     width: 25vw;
+}
+#mainarriba{
+    display: flex;
+    flex-direction: row;
+    height: calc(75vh / 2);
+    width: 75vw;
+    background-color: lime;
+}
+#mainabajo{
+    display: flex;
+    bottom: auto;
+    height: calc(75vh / 2);
+    width: 75vw;
+    background-color: orange;
 }
 
 /* Footer o Pie de página */
