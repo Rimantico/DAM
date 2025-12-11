@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+header {
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.headertexto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto;
+}
+
+.headerlogo {
+    height: 20vh;
+    width: auto;
+}
+
+.headerlogo img {
+    height: 100%;
+    width: auto;
+}
+
+#navegacion {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navegacion {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Main */
+main {
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+    background-color: black;
+}
+
+.seccionizquierda {
+    display: flex;
+    background-color: lightgray;
+    height: 75vh;
+    width: 75vw;
+}
+
+.seccionderecha {
+    display: flex;
+    background-color: lightblue;
+    height: 75vh;
+    width: 25vw;
+}
+
+/* Footer o Pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
