@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #03A64A;
+    color: white;
+    height: 10vh;
+}
+
+header img {
+    height: 10vh;
+    width: auto;
+    margin: 1vh 1vw;
+}
+
+#nombreempresa {
+    display: flex;
+    font-family: Oswald, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30vw;
+}
+
+#oferta {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+#logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20vw;
+}
+
+/* Main */
+/* Navegación y noticia */
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    width: 100vw;
+    height: 85vh;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    height: 85vh;
+    width: 55vw;
+    margin: auto;
+}
+
+#navegacion {
+    display: flex;
+    background-color: #03A66A;
+    color: white;
+    height: 10vh;
+    width: 55vw;
+}
+
+.enlace {
+    color: white;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+#navegacion ul {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    gap: calc(55vw / 3);
+}
+
+#noticia {
+    display: flex;
+    background-color: #03A66A;
+    color: white;
+    height: 85vh;
+    margin: auto;
+    overflow: auto;
+}
+
+#noticia article {
+    margin: 20px;
+    text-align: center;
+}
+
+#noticia p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#mapa {
+    height: 40vh;
+    width: 50vw;
+}
+
+/* Formularios */
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 85vh;
+    width: 45vw;
+}
+
+.derecha h2 {
+    margin: 2vw;
+}
+
+.derecha h3 {
+    margin-left: 5vw;
+}
+
+.formularios {
+    margin-left: 5vw;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03A64A;
+    color: white;
+    height: 5vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}

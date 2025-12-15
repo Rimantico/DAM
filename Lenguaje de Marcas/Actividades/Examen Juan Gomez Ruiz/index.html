@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="nombreempresa">
+            <h1>Casa Pepe</h1>
+        </section>
+        <section id="oferta">
+            <p>¡3x1 en palitos de pescado!</p>
+        </section>
+        <section id="logotipo">
+            <img src="./images/logotipo.png" alt="">
+        </section>
+    </header>
+    <main>
+        <!-- Parte izquierda de la página dedicada a la noticia y enlaces -->
+        <section class="izquierda">
+            <section id="navegacion">
+                <nav>
+                    <ul>
+                        <li class="enlace">Productos</li>
+                        <li class="enlace">Tiendas</li>
+                        <li class="enlace">Sobre Nosotros</li>
+                    </ul>
+                </nav>
+
+            </section>
+            <section id="noticia">
+                <article>
+                    <h2>Título noticia</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum dicta in provident fuga
+                        perferendis vero magni tempora exercitationem quos praesentium, quibusdam debitis unde culpa
+                        amet inventore reiciendis. Possimus, provident.
+                        Ab maxime rem a repellendus, ipsam aspernatur soluta culpa eaque illum hic eius excepturi
+                        consequatur optio corporis amet sapiente voluptatibus magnam! Animi suscipit harum voluptatem
+                        alias, minima rem nesciunt autem.
+                        Perspiciatis ducimus recusandae magnam facere dolorum, aut voluptatum repudiandae! Officia nemo
+                        nisi, doloremque animi sint eius, quasi voluptatum modi temporibus veritatis nobis, consectetur
+                        expedita. Assumenda quo suscipit velit similique voluptas.
+                        Dolore neque iusto nobis dolores ut veritatis porro doloremque quos pariatur culpa doloribus
+                        omnis ipsum perferendis, alias, debitis sunt nulla tempora ad obcaecati, nam nesciunt! Sint,
+                        eos. Maiores, quis et!
+                        Aspernatur ullam repellendus sapiente odio eius, accusamus inventore maxime fugiat saepe eveniet
+                        iure, rerum tempore illum voluptas dolore? Distinctio nobis incidunt unde non culpa nihil
+                        eligendi officia voluptates, cumque laudantium?</p>
+                    <br>
+                    <iframe id="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47252.3516996787!2d-0.19756677157888314!3d51.505953805783456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876054929181a85%3A0xd1af6c4f49b4bd0c!2sHyde%20Park!5e0!3m2!1ses!2ses!4v1765455865469!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </section>
+        <!-- Parte derecha de la página dedicada a Formularios -->
+        <section class="derecha">
+            <h2>Formularios</h2>
+            <h3>Nombre</h3>
+            <form action="/" class="formularios">
+                <br>
+                <input type="text" id="fname" name="fname" required placeholder="Juan Gomez"
+                    pattern="[A-Z][a-z áéíóú]+(\s[A-Z][a-z áéíóú]+)?">
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <h3>Dirección</h3>
+            <form action="/" class="formularios">
+                <br>
+                <input type="text" id="direccion" name="direccion" required placeholder="C/. Platero 49"
+                    pattern="C/.\\s[A-Z][a-z áéíóú]+\s[1-9]+">
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <h3>Número tlfn</h3>
+            <form action="/" class="formularios">
+                <br>
+                <input type="text" id="numero" name="numero" required placeholder="123 123 123"
+                    pattern="([0-9]{9})||([0-9]{3}\s[0-9]{3}\s[0-9]{3})">
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Juan Gómez Ruiz</p>
+    </footer>
+</body>
+
+</html>
